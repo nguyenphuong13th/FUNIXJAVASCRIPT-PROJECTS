@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+#mytable{
+    background-color: blanchedalmond;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.pb-2{
+    padding-bottom: 2rem;
+}
+.py-3{
+    padding: 3rem 0;
+}
+.py-5{
+    padding: 5rem 0;
+}
+
+.my-5{
+    margin: 0 5rem;
+}
+.text-center{
+    text-align: center;
+}
+.title{
+    font-size:5rem ;
+    text-align: center;
+    background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+td{
+    border: 1px solid black;
+    height:50px;
+    text-align: center;
+}
+label{
+    display:block;
+    text-align: center;
+}
+input{
+    width:100%;
+}
+.student-info-title::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: violet;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+}
+.info-1,.info-2,.info-3,.info-4,.score-1,.score-2,.score-3,.score-4{
+    margin: 0 5px;
+}
+.jusify-content-center{
+    justify-content: center;
+    align-items: center;
+}
+.jusify-content-between{
+    justify-content: space-between;
+    align-items: center;
+}
+#submitBtn{
+    width:30%;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+}
+#submitBtn:hover{
+    background-color: turquoise;
+    transform: scale(0.9);
+}
+.student-score-title::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+}
+#averageCalculatorBtn, #badScoreStudent{
+    width:30%;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+}
+#averageCalculatorBtn:hover{
+    background-color: turquoise;
+    transform: scale(0.9);
+}
+#badScoreStudent:hover{
+    background-color: turquoise;
+    transform: scale(0.9);
+}
+#highScoreStudent{
+    width:30%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    background-color: transparent;
+}
+#highScoreStudent:hover{
+    background-color: turquoise;
+    transform: scale(0.9);
+}
+.calculatorbtn{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+}
+.excellentStudent{
+    background-color: greenyellow;
+}
+.neddImproveStudent{
+    background-color: red;
+}
+

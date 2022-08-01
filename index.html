@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Score Magnament</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="grid">
+        <div class="container p-5">
+            <div class="app-title">
+                <h1 class="title">Student Data</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="student-info text-start py-5">
+                <h3 class="student-info-title">Student Infomation</h3>
+            </div>
+        <div class="container">
+            <form class='input-form row jusify-content-between'action="/action_page.php">
+                <div class="info-1 col-lg-2 col-md-4 col-sm-12">
+                    <label for="fname">Student Name:</label>
+                    <input type="text" id="student-name" name="student-name">
+                </div>
+                <div class="info-2 col-lg-2 col-md-4 col-sm-12">
+                    <label for="fname">Birth Year:</label>
+                    <input type="text" id="student-birth-year" name="student-birth-year">
+                </div>
+                <div class="info-3 col-lg-2 col-md-4 col-sm-12">
+                    <label for="fname">Student ID:</label>
+                    <input type="text" id="student-ID" name="student-ID">
+                </div>
+                <div class="info-4 col-lg-2 col-md-4 col-sm-12">
+                    <label for="fname">Student Class:</label>
+                    <input type="text" id="student-class" name="student-class">
+                </div>
+            </form>
+        </div>
+            <div class="student-scores text-start py-5">
+                <h3 class="student-score-title">Student Score</h3>
+            </div>
+        <div class="container">
+            <form action="" class="input-form row jusify-content-between">
+                <div class="score-1 col-lg-2 col-md-4 col-sm-12">
+                    <label for="lname">Math Score:</label>
+                    <input type="text" id="math-score" name="math-score" value="">
+                </div>
+                <div class="score-2 col-lg-2 col-md-4 col-sm-12">
+                    <label for="lname">Physic Score:</label>
+                    <input type="text" id="physic-score" name="physic-score" value="">
+                </div>
+                <div class="score-3 col-lg-2 col-md-4 col-sm-12">
+                    <label for="lname">Chemistry Score:</label>
+                    <input type="text" id="chemistry-score" name="chemistry-score" value="">
+                </div>
+                <div class="score-4 col-lg-2 col-md-4 col-sm-12">
+                    <label for="lname">English Score:</label>
+                    <input type="text" id="english-score" name="english-score" value="">
+                </div>
+            </form>
+        </div>
+            <div class="container">
+                <div class="row jusify-content-center py-5">
+                    <button type="button" id="submitBtn">Submit</button>
+                </div>
+
+            </div>
+            <table class="table table-striped" id="myTable">
+                <tr>
+                    <td>STT</td>
+                    <td>ID</td>
+                    <td>Full Name</td>
+                    <td>Birth Year</td>
+                    <td>Class</td>
+                    <td class='subject matchPoint'>Match</td>
+                    <td class='subject physicPoint'>Physic</td>
+                    <td class = 'subject chemicalPoint'>Chemiscal</td>
+                    <td class = 'subject englishPoint'>English</td>
+                    <td id ="AverageScore">Avarage</td>
+                    <td id ="modified">Modified</td>
+                </tr>
+            </table>
+            <div class="container-l-PC">
+                <div class="row jusify-content-center py-5">
+                    <div class="calculatorbtn">
+                        <button id="averageCalculatorBtn" type="button">Average Calculator Button</button><button id="highScoreStudent" type="button">High Score Students</button><button id="badScoreStudent" type="button">Bad Score Students</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
