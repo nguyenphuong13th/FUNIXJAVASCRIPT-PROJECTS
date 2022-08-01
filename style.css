@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+#mytable{
+    background-color: blanchedalmond;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.pb-2{
+    padding-bottom: 2rem;
+}
+.py-3{
+    padding: 3rem 0;
+}
+.py-5{
+    padding: 5rem 0;
+}
+.my-5{
+    margin: 0 5rem;
+}
+.text-center{
+    text-align: center;
+}
+.title{
+    font-size:5rem ;
+    text-align: center;
+    background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+td{
+    border: 1px solid black;
+    height:50px;
+    text-align: center;
+}
+th{
+    border: 1px solid black;
+    height:50px;
+    text-align: center;
+}
+label{
+    display:block;
+    text-align: center;
+}
+input{
+    width:100%;
+}
+.student-info-title::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: violet;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+}
+.info-1,.info-2,.info-3,.info-4,.score-1,.score-2,.score-3,.score-4{
+    margin: 0 5px;
+}
+.jusify-content-center{
+    justify-content: center;
+    align-items: center;
+}
+.jusify-content-between{
+    justify-content: space-between;
+    align-items: center;
+}
+#submitBtn{
+    width:30%;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#submitBtn:hover{
+    background-color: #1372fd;
+    transform: scale(0.9);
+}
+thead{
+    color: blanchedalmond;
+}
+.deleteStudent{
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.deleteStudent:hover{
+    background-color: #ffc107;
+    transform: scale(0.9);
+}
+.student-score-title::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+}
+#averageCalculatorBtn,#badScoreStudentBtn,#highScoreStudentBtn{
+    width:30%;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: oblique;
+}
+#averageCalculatorBtn:hover{
+    background-color:  #ffc20b;
+    transform: scale(0.9);
+}
+#badScoreStudentBtn:hover{
+    background-color: #dd3d4c;
+    transform: scale(0.9);
+}
+#highScoreStudentBtn{
+    width:30%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    background-color: transparent;
+}
+#highScoreStudentBtn:hover{
+    background-color: #1d8957;
+    transform: scale(0.9);
+}
+.calculatorbtn{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+}
+@media(max-width:768px){
+    #submitBtn{
+        width:100%;
+
+    }
+    .calculatorbtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+    }
+    #averageCalculatorBtn,#badScoreStudentBtn,#highScoreStudentBtn{
+        width:100%;
+        margin-top: 1rem;
+    }
+    th{
+        display: none;
+    }
+    #myTable,#myTable tbody,#myTable tr,#myTable td{
+        display: block;
+        width:100%;
+    }
+    #myTable tr{
+        margin-top: 1rem;
+    }
+    #myTable td{
+        text-align: right;
+        position: relative;
+        margin-bottom: 1px;
+    }
+    #myTable td::before{
+        content: attr(data-label);
+        position: absolute;
+        width:50%;
+        height: 100%;
+        left:0;
+        text-align: left;
+        margin-left: 1rem;
+        font-weight: bolder;
+        border-radius: 0 2px 2px 0;
+    }
+
+}
